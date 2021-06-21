@@ -1,5 +1,5 @@
 :root {
-    --main: #80ff00;
+    --main: #ffa600;
     --bg: #151515;
     --sub-bg: #252525;
     --text: #f9f9f9;
@@ -119,6 +119,7 @@ p, i:hover {
 
   .featured-image img {
     min-width: 100%;
+    filter: contrast(150%);
   }
 
   .media {
@@ -183,8 +184,6 @@ p, i:hover {
   }
 
   .label-logo, .release-artwork, .platform-icon {
-    width: 250px;
-    height: 250px;
     border: 4px dashed var(--main);
     border-radius: var(--border-radius);
     display: flex;
@@ -192,13 +191,52 @@ p, i:hover {
     align-items: center;
   }
 
+  .label-logo {
+    width: 250px;
+    height: 250px;
+  }
+
   .platform-icon {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
+  }
+
+  .stream-options {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .stream-options-bg {
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+  }
+
+  .stream-options i {
+    font-size: 5rem;
+    padding: 10px;
+    -webkit-text-fill-color: var(--text);
+  }
+
+  .stream-options i:hover {
+    -webkit-text-fill-color: var(--main);
+  }
+
+  .release-artwork {
+    width: 340px;
+    height: 340px;
+    position: relative;
+    text-align: center;
   }
 
   .release-artwork img {
-    width: 242px;
+    width: 332px;
     border-radius: calc(var(--border-radius) - 4px);
   }
 
@@ -223,8 +261,8 @@ p, i:hover {
   }
 
   .platform-icon i {
-    font-size: 8rem;
-    color: var(--text)
+    font-size: 6rem;
+    color: var(--text);
   }
 
   .footer {
@@ -303,5 +341,23 @@ p, i:hover {
     .label-logo, .release {
         margin-bottom: 50px;
 
+    }
+
+    .release-artwork {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .release-artwork img {
+      width: 242px;
+    }
+
+    .platform-icon {
+      width: 100px;
+      height: 100px;
+    }
+
+    .platform-icon i {
+      font-size: 3rem;
     }
   }
