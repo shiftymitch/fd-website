@@ -117,8 +117,8 @@ p, i:hover {
   }
 
   .carousel-item {
-    height: 540px;
-    min-height: 350px;
+    height: 100%;
+    margin-bottom: 40px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -331,6 +331,10 @@ p, i:hover {
     .socials {
       margin-top: 80px;
       padding-bottom: 20px;
+    }
+
+    .carousel-indicators, .carousel-control-prev, .carousel-control-next {
+      display: none;
     }
 
     .featured-image img {
