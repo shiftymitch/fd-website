@@ -328,6 +328,10 @@ p, i:hover {
       padding-top: 20px;
     }
 
+    .featured-text h5 {
+      font-size: .75rem;
+    }
+
     .socials {
       margin-top: 80px;
       padding-bottom: 20px;
