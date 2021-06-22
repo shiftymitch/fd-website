@@ -1,5 +1,6 @@
 :root {
-    --main: #ffa600;
+    --main: #ff362f; 
+    --main2: #ff0000; 
     --bg: #151515;
     --sub-bg: #252525;
     --text: #f9f9f9;
@@ -85,32 +86,25 @@ p, i:hover {
     width: 250px;
     margin: 0 auto;
     z-index: -1;
+    color: var(--main);
   }
 
   .socials {
     float: right;
   }
   
-  .socials i, .subscribe i {
+  .socials i {
       font-size: 25px;
       padding: 8px;
+  }
+
+  .socials i:hover {
+    border-bottom: 2px solid var(--main2);
   }
 
   .container-fluid {
     margin-top: 50px;
     margin-bottom: 60px;
-  }
-
-  .btn {
-      background-color: var(--main);
-      color: var(--text);
-      border-radius: var(--border-radius);
-      max-height: 50px;
-      padding: 0px;
-  }
-
-  .btn i {
-    color: var(--text);
   }
 
   .featured-image {
@@ -119,7 +113,7 @@ p, i:hover {
 
   .featured-image img {
     min-width: 100%;
-    filter: contrast(150%);
+    filter: hue-rotate(20deg);
   }
 
   .media {
@@ -135,7 +129,7 @@ p, i:hover {
     font-size: 4rem;
     font-weight: bold;
     margin-top: 20%;
-    color: var(--main)
+    color: var(--main2)
   }
 
   .section {
@@ -155,7 +149,7 @@ p, i:hover {
       min-height: 440px;
       min-width: 440px;
       box-shadow: inset 0px 0px 100px var(--main);
-      border: 4px dashed var(--main);
+      border: 4px dashed var(--main2);
       border-radius: var(--border-radius);
       text-align: center;
       margin-top: 40px;
@@ -166,7 +160,7 @@ p, i:hover {
       border-radius: var(--border-radius);
   }
 
-  .labels, .releases, .socials-section {
+  .labels, .releases, .socials-section, .press {
     margin: auto;
     margin-top: 60px;
     margin-bottom: 100px;
@@ -179,12 +173,12 @@ p, i:hover {
     flex-wrap: wrap;
   }
 
-  .label, .release, .platform {
+  .label, .release, .platform, .quote {
     margin-bottom: 40px;
   }
 
   .label-logo, .release-artwork, .platform-icon {
-    border: 4px dashed var(--main);
+    border: 4px dashed var(--main2);
     border-radius: var(--border-radius);
     display: flex;
     justify-content: center;
@@ -202,6 +196,7 @@ p, i:hover {
   }
 
   .stream-options {
+    opacity: 0.01;
     width: 100%;
     height: 100%;
     display: flex;
@@ -210,8 +205,12 @@ p, i:hover {
     position: absolute;
   }
 
+  .stream-options:hover {
+    opacity: 100%;
+  }
+  
   .stream-options-bg {
-    opacity: 50%;
+    opacity: 0.5;
     width: 100%;
     height: 100%;
     background-color: black;
@@ -225,7 +224,7 @@ p, i:hover {
   }
 
   .stream-options i:hover {
-    -webkit-text-fill-color: var(--main);
+    -webkit-text-fill-color: var(--main2);
   }
 
   .release-artwork {
@@ -258,6 +257,19 @@ p, i:hover {
 
   #circus {
     max-width: 10rem;
+  }
+
+  .quote-text {
+    color: var(--main2);
+    font-size: 3rem;
+    font-weight: bold;
+    word-wrap: wrap;
+  }
+
+  .quote-source {
+    padding-left: 35%;
+    font-weight: bold;
+    font-size: 1.5rem;
   }
 
   .platform-icon i {
@@ -359,5 +371,13 @@ p, i:hover {
 
     .platform-icon i {
       font-size: 3rem;
+    }
+
+    .quote-text {
+      font-size: 1.5rem;
+    }
+  
+    .quote-source {
+      font-size: .75rem;
     }
   }
