@@ -116,6 +116,16 @@ p, i:hover {
     filter: hue-rotate(20deg);
   }
 
+  .carousel-item {
+    height: 540px;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
   .media {
     display: flex;
     justify-content: space-around;
