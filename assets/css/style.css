@@ -113,17 +113,6 @@ p, i:hover {
 
   .featured-image img {
     min-width: 100%;
-    filter: hue-rotate(20deg);
-  }
-
-  .carousel-item {
-    height: 100%;
-    margin-bottom: 40px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   }
 
   .media {
@@ -143,8 +132,8 @@ p, i:hover {
   }
 
   .section {
-      min-width: 550px;
-      max-width: 500px;
+      min-width: 700px;
+      max-width: 750px;
       margin-bottom: 80px;
       margin-left: 20px;
       margin-right: 20px;
@@ -157,9 +146,9 @@ p, i:hover {
   .section-body {
       padding: 20px;
       min-height: 440px;
-      min-width: 440px;
+      min-width: 540px;
       box-shadow: inset 0px 0px 100px var(--main);
-      border: 4px dashed var(--main2);
+      border: 4px solid var(--text);
       border-radius: var(--border-radius);
       text-align: center;
       margin-top: 40px;
@@ -188,7 +177,7 @@ p, i:hover {
   }
 
   .label-logo, .release-artwork, .platform-icon {
-    border: 4px dashed var(--main2);
+    border: 4px solid var(--text);
     border-radius: var(--border-radius);
     display: flex;
     justify-content: center;
