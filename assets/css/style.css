@@ -70,12 +70,14 @@ p, i:hover {
   .navigation {
       position: relative;
       min-width: 100%;
+      min-height: 150px;
       z-index: 100;
   }
 
   .featured-text, .socials {
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
+    z-index: 100;
   }
 
   .featured-text {
@@ -85,8 +87,13 @@ p, i:hover {
   .fransis-derelle-logo {
     width: 250px;
     margin: 0 auto;
+    margin-top: 50px;
     z-index: -1;
     color: var(--main);
+  }
+
+  .fransis-derelle-logo svg {
+    z-index: -1;
   }
 
   .socials {
@@ -94,8 +101,8 @@ p, i:hover {
   }
   
   .socials i {
-      font-size: 25px;
-      padding: 8px;
+    font-size: 25px;
+    padding: 8px;
   }
 
   .socials i:hover {
@@ -304,8 +311,8 @@ p, i:hover {
     }
 
     .fransis-derelle-logo {
-      margin-top: -220px;
-      padding-bottom: 20px;
+      margin-top: -170px;
+      padding-bottom: 80px;
     }
 
     .featured-text, .socials {
