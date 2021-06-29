@@ -119,8 +119,10 @@ p, i:hover {
   }
 
   .featured-image img {
-    min-width: 100%;
-  }
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
 
   .media {
     display: flex;
@@ -303,11 +305,16 @@ p, i:hover {
     margin-top: 10px;
   }
 
+  @media only screen and (max-width: 1524px) {
+    .media {
+      margin-top: 50px;
+    }
+  }
 
-  @media only screen and (max-width: 440px) {
+  @media only screen and (max-width: 1240px) {
     .navigation {
-        display: block;
-        text-align: center;
+      display: block;
+      text-align: center;
     }
 
     .fransis-derelle-logo {
@@ -332,16 +339,9 @@ p, i:hover {
       margin-top: 80px;
       padding-bottom: 20px;
     }
+  }
 
-    .carousel-indicators, .carousel-control-prev, .carousel-control-next {
-      display: none;
-    }
-
-    .featured-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-    }
+  @media only screen and (max-width: 764px) {
 
     .media {
       display: block;
@@ -359,6 +359,10 @@ p, i:hover {
     .section-body {
         min-width: 0px;
     }
+  }
+
+  @media only screen and (max-width: 440px) {
+
 
     .labels, .releases {
         display: block;
