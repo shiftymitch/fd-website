@@ -168,6 +168,10 @@ p, i:hover {
       border-radius: var(--border-radius);
   }
 
+  #tour-dates {
+    clip-path: inset(0px round 10px);
+  }
+
   .labels, .releases, .socials-section, .press {
     margin: auto;
     margin-top: 60px;
