@@ -185,7 +185,14 @@ p, i:hover {
     flex-wrap: wrap;
   }
 
-  .label, .release, .platform, .quote {
+  .merch-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .label, .release, .platform, .quote, #merch {
     margin-bottom: 40px;
   }
 
@@ -363,6 +370,14 @@ p, i:hover {
 
     .section-body {
         min-width: 0px;
+    }
+
+    .merch-items {
+      flex-direction: column;
+    }
+
+    .item {
+      margin-bottom: 40px;
     }
   }
 
