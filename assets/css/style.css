@@ -1,6 +1,6 @@
 :root {
-    --main: #ff362f; 
-    --main2: #ff0000; 
+    --main: #2fa1ff; 
+    --main2: #72afff; 
     --bg: #151515;
     --sub-bg: #252525;
     --text: #f9f9f9;
@@ -129,7 +129,7 @@ p, i:hover {
     justify-content: space-around;
     align-items: center;
     min-height: 850px;
-    margin-top: -50px;
+    margin: 0px;
     flex-wrap: wrap;
   }
 
