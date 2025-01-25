@@ -1,9 +1,9 @@
 :root {
-    --main: #edaae4; 
-    --main2: #eb7edc; 
+    --main: #ffffff; 
+    --main2: #7ea2eb; 
     --bg: #151515;
     --sub-bg: #252525;
-    --text: #f9f9f9;
+    --text: #7ea2eb;
     --border-radius: 10px;
 }
 
@@ -294,6 +294,10 @@ p, i:hover {
 
   .platform-icon i {
     font-size: 6rem;
+    color: var(--main);
+  }
+
+  .platform-icon i:hover {
     color: var(--text);
   }
 
